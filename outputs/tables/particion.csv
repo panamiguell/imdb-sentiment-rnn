@@ -1,0 +1,4 @@
+split,negativa,positiva,total,%
+train,13869,13935,27804,70.0
+val,2972,2986,5958,15.0
+test,2972,2986,5958,15.0
