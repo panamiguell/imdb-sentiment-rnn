@@ -47,4 +47,19 @@ Run all cells. Each experiment saves its results in `outputs/tables/`; if they a
 
 ## Results
 
-_To be completed._
+Test set of 5,958 reviews (precision, recall and F1 of the positive class):
+
+| Model | Accuracy | Precision | Recall | F1 | ROC-AUC |
+|---|---|---|---|---|---|
+| TF-IDF (1-2 grams) + logistic regression | 0.9183 | 0.9161 | 0.9213 | **0.9187** | 0.9723 |
+| BiLSTM, Word2Vec, final state, 200 tokens | 0.8850 | 0.8633 | 0.9156 | 0.8887 | 0.9556 |
+| BiGRU, Word2Vec, final state, 200 tokens | 0.8943 | 0.8679 | 0.9307 | 0.8982 | 0.9618 |
+| BiGRU, Word2Vec, mean+max pooling, 200 tokens | 0.9020 | 0.8945 | 0.9119 | 0.9032 | 0.9631 |
+| **BiGRU, Word2Vec, mean+max pooling, 400 tokens** (3 seeds) | 0.9107 ± 0.0039 | 0.9018 ± 0.0169 | 0.9226 ± 0.0177 | **0.9119 ± 0.0034** | 0.9687 ± 0.0017 |
+
+- Word2Vec initialization is the largest single gain (+2 to +3 F1 points over random embeddings).
+- Mean+max pooling and reading 400 tokens add about +0.5 and +0.8 points.
+- The strong bag-of-bigrams baseline remains 0.7 F1 points ahead; the gap is largest on reviews longer than 400 tokens, which the RNN truncates.
+- High-confidence errors reveal likely label noise and ironic "so bad it's good" reviews.
+
+All CPU training times, histories and test predictions are in `outputs/tables/`.
