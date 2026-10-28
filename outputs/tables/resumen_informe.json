@@ -1,0 +1,179 @@
+{
+ "dataset": {
+  "reseñas": 40000,
+  "duplicados_eliminados": 280,
+  "únicas": 39720,
+  "partición": {
+   "train": 27804,
+   "val": 5958,
+   "test": 5958
+  },
+  "vocabulario": 20002,
+  "truncamiento": "inicio+final",
+  "cobertura_200_train": 0.5826,
+  "cobertura_max_len_largo_train": 0.8674
+ },
+ "eleccion_truncamiento_val_f1": {
+  "completa": 0.913,
+  "inicio": 0.8895,
+  "final": 0.902,
+  "inicio+final": 0.9032
+ },
+ "linea_base": {
+  "modelo": "TF-IDF (1-2 gramas) + regresión logística",
+  "C": 8.0,
+  "val_f1": 0.9136,
+  "test_accuracy": 0.9183,
+  "test_precision": 0.9161,
+  "test_recall": 0.9213,
+  "test_f1": 0.9187,
+  "test_f1_macro": 0.9183,
+  "test_roc_auc": 0.9723,
+  "test_tn": 2720.0,
+  "test_fp": 252.0,
+  "test_fn": 235.0,
+  "test_tp": 2751.0
+ },
+ "experimento_1": [
+  {
+   "configuracion": "BiLSTM W2V final L200",
+   "parametros": 2085321,
+   "mejor_epoca": 5,
+   "epocas": 8,
+   "train_acc": 0.9252,
+   "val_acc": 0.8924,
+   "val_f1": 0.8964,
+   "test_precision": 0.8633,
+   "test_recall": 0.9156,
+   "test_f1": 0.8887,
+   "test_accuracy": 0.885,
+   "tiempo_min": 13.3814
+  },
+  {
+   "configuracion": "BiLSTM aleat. final L200",
+   "parametros": 2085321,
+   "mejor_epoca": 5,
+   "epocas": 8,
+   "train_acc": 0.8828,
+   "val_acc": 0.8578,
+   "val_f1": 0.8654,
+   "test_precision": 0.8329,
+   "test_recall": 0.9082,
+   "test_f1": 0.869,
+   "test_accuracy": 0.8627,
+   "tiempo_min": 14.5121
+  },
+  {
+   "configuracion": "BiGRU W2V final L200",
+   "parametros": 2064073,
+   "mejor_epoca": 4,
+   "epocas": 7,
+   "train_acc": 0.9367,
+   "val_acc": 0.8978,
+   "val_f1": 0.9019,
+   "test_precision": 0.8679,
+   "test_recall": 0.9307,
+   "test_f1": 0.8982,
+   "test_accuracy": 0.8943,
+   "tiempo_min": 16.6713
+  },
+  {
+   "configuracion": "BiGRU aleat. final L200",
+   "parametros": 2064073,
+   "mejor_epoca": 10,
+   "epocas": 10,
+   "train_acc": 0.9185,
+   "val_acc": 0.8646,
+   "val_f1": 0.8625,
+   "test_precision": 0.8852,
+   "test_recall": 0.8496,
+   "test_f1": 0.8671,
+   "test_accuracy": 0.8694,
+   "tiempo_min": 24.8074
+  }
+ ],
+ "experimento_2": [
+  {
+   "configuracion": "BiGRU W2V final L200",
+   "parametros": 2064073,
+   "mejor_epoca": 4,
+   "epocas": 7,
+   "train_acc": 0.9367,
+   "val_acc": 0.8978,
+   "val_f1": 0.9019,
+   "test_precision": 0.8679,
+   "test_recall": 0.9307,
+   "test_f1": 0.8982,
+   "test_accuracy": 0.8943,
+   "tiempo_min": 16.6713
+  },
+  {
+   "configuracion": "BiGRU W2V media+max L200",
+   "parametros": 2064201,
+   "mejor_epoca": 5,
+   "epocas": 8,
+   "train_acc": 0.955,
+   "val_acc": 0.9038,
+   "val_f1": 0.9055,
+   "test_precision": 0.8945,
+   "test_recall": 0.9119,
+   "test_f1": 0.9032,
+   "test_accuracy": 0.902,
+   "tiempo_min": 19.0274
+  },
+  {
+   "configuracion": "BiGRU W2V media+max L400",
+   "parametros": 2064201,
+   "mejor_epoca": 4,
+   "epocas": 7,
+   "train_acc": 0.9434,
+   "val_acc": 0.9068,
+   "val_f1": 0.9109,
+   "test_precision": 0.8823,
+   "test_recall": 0.9414,
+   "test_f1": 0.9109,
+   "test_accuracy": 0.9077,
+   "tiempo_min": 57.8195
+  }
+ ],
+ "configuracion_final": "BiGRU W2V media+max L400",
+ "experimento_3_media_std": {
+  "test_accuracy": "0.9107 ± 0.0039",
+  "test_precision": "0.9018 ± 0.0169",
+  "test_recall": "0.9226 ± 0.0177",
+  "test_f1": "0.9119 ± 0.0034",
+  "test_roc_auc": "0.9687 ± 0.0017"
+ },
+ "f1_ic95_semilla42": [
+  0.9037,
+  0.9183
+ ],
+ "accuracy_por_longitud": {
+  "≤100": {
+   "n": 727.0,
+   "acc_rnn": 0.9078,
+   "acc_base": 0.9243
+  },
+  "101-200": {
+   "n": 2766.0,
+   "acc_rnn": 0.9064,
+   "acc_base": 0.9132
+  },
+  "201-400": {
+   "n": 1708.0,
+   "acc_rnn": 0.9128,
+   "acc_base": 0.921
+  },
+  ">400": {
+   "n": 757.0,
+   "acc_rnn": 0.9009,
+   "acc_base": 0.9247
+  }
+ },
+ "errores_semilla42": {
+  "fp": 375,
+  "fn": 175
+ },
+ "dispositivo": "cpu",
+ "modo_rapido": false
+}
