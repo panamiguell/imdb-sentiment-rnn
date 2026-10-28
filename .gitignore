@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data: compressed archives are not versioned (the raw CSV is)
+data/**/*.zip
+
+# Trained weights (results and predictions in outputs/tables are versioned)
+outputs/models/*
+!outputs/models/.gitkeep
+
+# Smoke-test outputs (quick mode)
+outputs/_smoke_test/
+
+# LaTeX build files
+report/*.aux
+report/*.log
+report/*.out
+report/*.synctex.gz
+report/*.fdb_latexmk
+report/*.fls
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
