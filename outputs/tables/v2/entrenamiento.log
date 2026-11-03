@@ -1,0 +1,72 @@
+2026-10-30 19:16:23 [gru_word2vec_mm_L200_s42] ép 1 | lr 1.0e-03 | train loss 0.4465 acc 0.7781 | val loss 0.3201 acc 0.8659 F1 0.8576 | 293s *
+2026-10-30 19:21:20 [gru_word2vec_mm_L200_s42] ép 2 | lr 1.0e-03 | train loss 0.2671 acc 0.8886 | val loss 0.2558 acc 0.8941 F1 0.8946 | 297s *
+2026-10-30 20:05:58 [gru_word2vec_mm_L200_s42] ép 3 | lr 1.0e-03 | train loss 0.2051 acc 0.9190 | val loss 0.3567 acc 0.8726 F1 0.8844 | 298s
+2026-10-30 20:11:09 [gru_word2vec_mm_L200_s42] ép 4 | lr 1.0e-03 | train loss 0.1654 acc 0.9364 | val loss 0.2808 acc 0.8839 F1 0.8767 | 311s
+2026-10-30 20:15:58 [gru_word2vec_mm_L200_s42] ép 5 | lr 5.0e-04 | train loss 0.1201 acc 0.9569 | val loss 0.2643 acc 0.9030 F1 0.9050 | 289s *
+2026-10-30 20:20:53 [gru_word2vec_mm_L200_s42] ép 6 | lr 5.0e-04 | train loss 0.0982 acc 0.9653 | val loss 0.3166 acc 0.8985 F1 0.8991 | 295s
+2026-10-30 20:25:57 [gru_word2vec_mm_L200_s42] ép 7 | lr 5.0e-04 | train loss 0.0821 acc 0.9721 | val loss 0.3096 acc 0.9003 F1 0.9026 | 304s
+2026-10-30 20:31:09 [gru_word2vec_mm_L200_s42] ép 8 | lr 2.5e-04 | train loss 0.0651 acc 0.9777 | val loss 0.3586 acc 0.8944 F1 0.8913 | 312s
+2026-10-30 20:36:31 [gru_word2vec_mm_L200_s7] ép 1 | lr 1.0e-03 | train loss 0.4712 acc 0.7589 | val loss 0.2971 acc 0.8748 F1 0.8799 | 312s *
+2026-10-30 20:41:16 [gru_word2vec_mm_L200_s7] ép 2 | lr 1.0e-03 | train loss 0.2707 acc 0.8881 | val loss 0.2566 acc 0.8931 F1 0.8957 | 286s *
+2026-10-30 20:46:17 [gru_word2vec_mm_L200_s7] ép 3 | lr 1.0e-03 | train loss 0.2071 acc 0.9170 | val loss 0.2369 acc 0.9003 F1 0.8987 | 301s *
+2026-10-30 20:51:24 [gru_word2vec_mm_L200_s7] ép 4 | lr 1.0e-03 | train loss 0.1616 acc 0.9400 | val loss 0.2595 acc 0.9027 F1 0.9056 | 307s *
+2026-10-30 20:56:24 [gru_word2vec_mm_L200_s7] ép 5 | lr 1.0e-03 | train loss 0.1249 acc 0.9530 | val loss 0.2969 acc 0.8889 F1 0.8819 | 300s
+2026-10-30 21:01:23 [gru_word2vec_mm_L200_s7] ép 6 | lr 1.0e-03 | train loss 0.0944 acc 0.9657 | val loss 0.3163 acc 0.8964 F1 0.8979 | 299s
+2026-10-30 21:06:24 [gru_word2vec_mm_L200_s7] ép 7 | lr 5.0e-04 | train loss 0.0584 acc 0.9796 | val loss 0.3534 acc 0.8946 F1 0.8944 | 300s
+2026-10-30 21:11:42 [gru_word2vec_mm_L200_s123] ép 1 | lr 1.0e-03 | train loss 0.4509 acc 0.7809 | val loss 0.3270 acc 0.8567 F1 0.8688 | 308s *
+2026-10-30 21:16:28 [gru_word2vec_mm_L200_s123] ép 2 | lr 1.0e-03 | train loss 0.2699 acc 0.8880 | val loss 0.2610 acc 0.8902 F1 0.8931 | 286s *
+2026-10-30 21:21:34 [gru_word2vec_mm_L200_s123] ép 3 | lr 1.0e-03 | train loss 0.2118 acc 0.9162 | val loss 0.2430 acc 0.8985 F1 0.8997 | 306s *
+2026-10-30 21:26:25 [gru_word2vec_mm_L200_s123] ép 4 | lr 1.0e-03 | train loss 0.1662 acc 0.9362 | val loss 0.2528 acc 0.8974 F1 0.9003 | 291s *
+2026-10-30 21:31:19 [gru_word2vec_mm_L200_s123] ép 5 | lr 1.0e-03 | train loss 0.1310 acc 0.9502 | val loss 0.2649 acc 0.8943 F1 0.8920 | 294s
+2026-10-30 21:36:18 [gru_word2vec_mm_L200_s123] ép 6 | lr 1.0e-03 | train loss 0.0948 acc 0.9652 | val loss 0.3530 acc 0.8902 F1 0.8956 | 299s
+2026-10-30 21:41:57 [gru_word2vec_mm_L200_s123] ép 7 | lr 5.0e-04 | train loss 0.0649 acc 0.9777 | val loss 0.3516 acc 0.8959 F1 0.8971 | 339s
+2026-10-30 21:47:15 [gru_glove_mm_L200_s42] ép 1 | lr 1.0e-03 | train loss 0.5015 acc 0.7361 | val loss 0.3226 acc 0.8656 F1 0.8671 | 307s *
+2026-10-30 21:52:44 [gru_glove_mm_L200_s42] ép 2 | lr 1.0e-03 | train loss 0.2936 acc 0.8743 | val loss 0.2613 acc 0.8921 F1 0.8931 | 329s *
+2026-10-30 21:57:58 [gru_glove_mm_L200_s42] ép 3 | lr 1.0e-03 | train loss 0.2246 acc 0.9090 | val loss 0.2662 acc 0.8988 F1 0.9018 | 314s *
+2026-10-30 22:02:53 [gru_glove_mm_L200_s42] ép 4 | lr 1.0e-03 | train loss 0.1789 acc 0.9308 | val loss 0.2499 acc 0.9068 F1 0.9079 | 295s *
+2026-10-30 22:08:07 [gru_glove_mm_L200_s42] ép 5 | lr 1.0e-03 | train loss 0.1462 acc 0.9452 | val loss 0.2587 acc 0.9030 F1 0.9022 | 314s
+2026-10-30 22:12:54 [gru_glove_mm_L200_s42] ép 6 | lr 1.0e-03 | train loss 0.1171 acc 0.9566 | val loss 0.2861 acc 0.9028 F1 0.9027 | 287s
+2026-10-30 22:17:59 [gru_glove_mm_L200_s42] ép 7 | lr 5.0e-04 | train loss 0.0860 acc 0.9692 | val loss 0.3249 acc 0.8991 F1 0.9021 | 305s
+2026-10-30 22:23:09 [gru_glove_mm_L200_s7] ép 1 | lr 1.0e-03 | train loss 0.5120 acc 0.7301 | val loss 0.3722 acc 0.8441 F1 0.8303 | 300s *
+2026-10-30 22:28:09 [gru_glove_mm_L200_s7] ép 2 | lr 1.0e-03 | train loss 0.2992 acc 0.8731 | val loss 0.2700 acc 0.8884 F1 0.8848 | 300s *
+2026-10-30 22:33:20 [gru_glove_mm_L200_s7] ép 3 | lr 1.0e-03 | train loss 0.2265 acc 0.9079 | val loss 0.2415 acc 0.9005 F1 0.9008 | 311s *
+2026-10-30 22:38:33 [gru_glove_mm_L200_s7] ép 4 | lr 1.0e-03 | train loss 0.1814 acc 0.9303 | val loss 0.2514 acc 0.9045 F1 0.9062 | 312s *
+2026-10-30 22:43:22 [gru_glove_mm_L200_s7] ép 5 | lr 1.0e-03 | train loss 0.1438 acc 0.9464 | val loss 0.2845 acc 0.8911 F1 0.8856 | 289s
+2026-10-30 22:48:01 [gru_glove_mm_L200_s7] ép 6 | lr 1.0e-03 | train loss 0.1170 acc 0.9567 | val loss 0.3135 acc 0.8983 F1 0.9015 | 278s
+2026-10-30 22:52:41 [gru_glove_mm_L200_s7] ép 7 | lr 5.0e-04 | train loss 0.0884 acc 0.9688 | val loss 0.3100 acc 0.9006 F1 0.9022 | 281s
+2026-10-30 22:57:21 [gru_glove_mm_L200_s123] ép 1 | lr 1.0e-03 | train loss 0.5042 acc 0.7389 | val loss 0.5015 acc 0.7847 F1 0.8193 | 270s *
+2026-10-30 23:01:55 [gru_glove_mm_L200_s123] ép 2 | lr 1.0e-03 | train loss 0.2893 acc 0.8792 | val loss 0.2690 acc 0.8917 F1 0.8919 | 273s *
+2026-10-30 23:06:34 [gru_glove_mm_L200_s123] ép 3 | lr 1.0e-03 | train loss 0.2230 acc 0.9107 | val loss 0.2491 acc 0.9005 F1 0.9030 | 279s *
+2026-10-30 23:11:16 [gru_glove_mm_L200_s123] ép 4 | lr 1.0e-03 | train loss 0.1809 acc 0.9299 | val loss 0.2778 acc 0.8941 F1 0.9002 | 282s
+2026-10-30 23:16:18 [gru_glove_mm_L200_s123] ép 5 | lr 1.0e-03 | train loss 0.1444 acc 0.9457 | val loss 0.2557 acc 0.9015 F1 0.9019 | 302s
+2026-10-30 23:21:29 [gru_glove_mm_L200_s123] ép 6 | lr 5.0e-04 | train loss 0.1104 acc 0.9596 | val loss 0.2702 acc 0.9003 F1 0.9011 | 311s
+2026-10-30 23:25:57 [gru_glove-congelado_mm_L200_s42] ép 1 | lr 1.0e-03 | train loss 0.5615 acc 0.6955 | val loss 0.4238 acc 0.8103 F1 0.8206 | 258s *
+2026-10-30 23:30:12 [gru_glove-congelado_mm_L200_s42] ép 2 | lr 1.0e-03 | train loss 0.4124 acc 0.8120 | val loss 0.3505 acc 0.8515 F1 0.8532 | 254s *
+2026-10-30 23:34:31 [gru_glove-congelado_mm_L200_s42] ép 3 | lr 1.0e-03 | train loss 0.3669 acc 0.8366 | val loss 0.4278 acc 0.8181 F1 0.8393 | 259s
+2026-10-30 23:39:10 [gru_glove-congelado_mm_L200_s42] ép 4 | lr 1.0e-03 | train loss 0.3484 acc 0.8470 | val loss 0.3176 acc 0.8681 F1 0.8657 | 279s *
+2026-10-30 23:43:49 [gru_glove-congelado_mm_L200_s42] ép 5 | lr 1.0e-03 | train loss 0.3308 acc 0.8544 | val loss 0.3220 acc 0.8610 F1 0.8685 | 279s *
+2026-10-30 23:48:36 [gru_glove-congelado_mm_L200_s42] ép 6 | lr 1.0e-03 | train loss 0.3188 acc 0.8626 | val loss 0.2987 acc 0.8770 F1 0.8744 | 287s *
+2026-10-30 23:53:05 [gru_glove-congelado_mm_L200_s42] ép 7 | lr 1.0e-03 | train loss 0.3092 acc 0.8648 | val loss 0.2845 acc 0.8795 F1 0.8808 | 269s *
+2026-10-30 23:57:41 [gru_glove-congelado_mm_L200_s42] ép 8 | lr 1.0e-03 | train loss 0.2999 acc 0.8699 | val loss 0.2900 acc 0.8758 F1 0.8816 | 276s *
+2026-10-31 00:02:15 [gru_glove-congelado_mm_L200_s42] ép 9 | lr 1.0e-03 | train loss 0.2842 acc 0.8774 | val loss 0.3330 acc 0.8602 F1 0.8727 | 274s
+2026-10-31 00:07:12 [gru_glove-congelado_mm_L200_s42] ép 10 | lr 1.0e-03 | train loss 0.2793 acc 0.8794 | val loss 0.2698 acc 0.8857 F1 0.8887 | 296s *
+2026-10-31 00:11:42 [gru_glove-congelado_mm_L200_s7] ép 1 | lr 1.0e-03 | train loss 0.5603 acc 0.6986 | val loss 0.4577 acc 0.7952 F1 0.7716 | 261s *
+2026-10-31 00:15:30 [gru_glove-congelado_mm_L200_s7] ép 2 | lr 1.0e-03 | train loss 0.4240 acc 0.8051 | val loss 0.3842 acc 0.8328 F1 0.8461 | 227s *
+2026-10-31 00:22:33 [gru_glove-congelado_mm_L200_s7] ép 3 | lr 1.0e-03 | train loss 0.3752 acc 0.8301 | val loss 0.3442 acc 0.8501 F1 0.8593 | 124s *
+2026-10-31 00:24:35 [gru_glove-congelado_mm_L200_s7] ép 4 | lr 1.0e-03 | train loss 0.3466 acc 0.8475 | val loss 0.3360 acc 0.8577 F1 0.8665 | 122s *
+2026-10-31 00:26:37 [gru_glove-congelado_mm_L200_s7] ép 5 | lr 1.0e-03 | train loss 0.3328 acc 0.8532 | val loss 0.3066 acc 0.8698 F1 0.8748 | 122s *
+2026-10-31 00:28:38 [gru_glove-congelado_mm_L200_s7] ép 6 | lr 1.0e-03 | train loss 0.3179 acc 0.8621 | val loss 0.2957 acc 0.8745 F1 0.8743 | 121s
+2026-10-31 00:30:38 [gru_glove-congelado_mm_L200_s7] ép 7 | lr 1.0e-03 | train loss 0.3079 acc 0.8665 | val loss 0.3012 acc 0.8741 F1 0.8807 | 120s *
+2026-10-31 00:32:37 [gru_glove-congelado_mm_L200_s7] ép 8 | lr 1.0e-03 | train loss 0.2955 acc 0.8724 | val loss 0.3769 acc 0.8505 F1 0.8662 | 119s
+2026-10-31 00:34:36 [gru_glove-congelado_mm_L200_s7] ép 9 | lr 1.0e-03 | train loss 0.2871 acc 0.8747 | val loss 0.3312 acc 0.8629 F1 0.8752 | 119s
+2026-10-31 00:36:35 [gru_glove-congelado_mm_L200_s7] ép 10 | lr 5.0e-04 | train loss 0.2713 acc 0.8853 | val loss 0.2875 acc 0.8805 F1 0.8861 | 119s *
+2026-10-31 00:38:41 [gru_glove-congelado_mm_L200_s123] ép 1 | lr 1.0e-03 | train loss 0.5554 acc 0.7029 | val loss 0.5145 acc 0.7751 F1 0.8046 | 121s *
+2026-10-31 00:40:42 [gru_glove-congelado_mm_L200_s123] ép 2 | lr 1.0e-03 | train loss 0.4088 acc 0.8127 | val loss 0.3620 acc 0.8424 F1 0.8385 | 121s *
+2026-10-31 00:42:46 [gru_glove-congelado_mm_L200_s123] ép 3 | lr 1.0e-03 | train loss 0.3699 acc 0.8335 | val loss 0.3333 acc 0.8590 F1 0.8607 | 124s *
+2026-10-31 00:44:48 [gru_glove-congelado_mm_L200_s123] ép 4 | lr 1.0e-03 | train loss 0.3487 acc 0.8434 | val loss 0.3710 acc 0.8394 F1 0.8548 | 122s
+2026-10-31 00:46:49 [gru_glove-congelado_mm_L200_s123] ép 5 | lr 1.0e-03 | train loss 0.3284 acc 0.8562 | val loss 0.3099 acc 0.8696 F1 0.8748 | 121s *
+2026-10-31 00:48:49 [gru_glove-congelado_mm_L200_s123] ép 6 | lr 1.0e-03 | train loss 0.3152 acc 0.8639 | val loss 0.3732 acc 0.8384 F1 0.8564 | 119s
+2026-10-31 00:50:49 [gru_glove-congelado_mm_L200_s123] ép 7 | lr 1.0e-03 | train loss 0.3024 acc 0.8674 | val loss 0.2933 acc 0.8771 F1 0.8813 | 120s *
+2026-10-31 00:52:52 [gru_glove-congelado_mm_L200_s123] ép 8 | lr 1.0e-03 | train loss 0.2917 acc 0.8729 | val loss 0.2940 acc 0.8765 F1 0.8824 | 123s *
+2026-10-31 00:54:58 [gru_glove-congelado_mm_L200_s123] ép 9 | lr 1.0e-03 | train loss 0.2801 acc 0.8797 | val loss 0.2805 acc 0.8845 F1 0.8878 | 125s *
+2026-10-31 00:57:01 [gru_glove-congelado_mm_L200_s123] ép 10 | lr 1.0e-03 | train loss 0.2728 acc 0.8841 | val loss 0.2695 acc 0.8904 F1 0.8891 | 124s *

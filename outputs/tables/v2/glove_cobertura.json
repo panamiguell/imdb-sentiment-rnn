@@ -1,0 +1,6 @@
+{
+ "palabras_glove": 400000,
+ "cobertura_directa": 0.96645,
+ "cobertura_con_contracciones": 0.99605,
+ "contracciones_resueltas": 592
+}

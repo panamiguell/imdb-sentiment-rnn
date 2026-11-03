@@ -1,0 +1,293 @@
+{
+ "versiones": {
+  "python": "3.13.18",
+  "torch": "2.15.0+cu132",
+  "gensim": "4.4.0",
+  "numpy": "2.5.3",
+  "pandas": "3.0.5",
+  "scikit-learn": "1.9.1"
+ },
+ "dispositivo": "cpu",
+ "modo_rapido": false,
+ "dataset": {
+  "únicas": 39720,
+  "partición": {
+   "train": 27804,
+   "val": 5958,
+   "test": 5958
+  },
+  "vocabulario": 20002
+ },
+ "glove": {
+  "palabras_glove": 400000,
+  "cobertura_directa": 0.9665,
+  "cobertura_con_contracciones": 0.996,
+  "contracciones_resueltas": 592
+ },
+ "linea_base": {
+  "modelo": "TF-IDF (1-2 gramas) + regresión logística",
+  "C": 8.0,
+  "val_f1": 0.9136,
+  "test_accuracy": 0.9183,
+  "test_precision": 0.9161,
+  "test_recall": 0.9213,
+  "test_f1": 0.9187,
+  "test_f1_macro": 0.9183,
+  "test_roc_auc": 0.9723,
+  "test_tn": 2720.0,
+  "test_fp": 252.0,
+  "test_fn": 235.0,
+  "test_tp": 2751.0
+ },
+ "experimento_1": {
+  "BiGRU GloVe L200": {
+   "val_f1": "0.9057 ± 0.0025",
+   "test_f1": "0.9040 ± 0.0028",
+   "mejor_epoca": [
+    4,
+    4,
+    3
+   ],
+   "tiempo_min": 33.0
+  },
+  "BiGRU Word2Vec L200": {
+   "val_f1": "0.9036 ± 0.0029",
+   "test_f1": "0.9044 ± 0.0010",
+   "mejor_epoca": [
+    5,
+    4,
+    4
+   ],
+   "tiempo_min": 36.8
+  }
+ },
+ "mejor_embedding": "glove",
+ "experimento_2": {
+  "BiGRU GloVe L200": {
+   "val_f1": "0.9057 ± 0.0025",
+   "test_f1": "0.9040 ± 0.0028",
+   "brecha_train_val": 0.02,
+   "parametros_entrenables": 2064201,
+   "tiempo_min": 33.0
+  },
+  "BiGRU GloVe congelado L200": {
+   "val_f1": "0.8880 ± 0.0016",
+   "test_f1": "0.8907 ± 0.0014",
+   "brecha_train_val": -0.0026,
+   "parametros_entrenables": 64001,
+   "tiempo_min": 30.0
+  }
+ },
+ "congelar_elegido": false,
+ "red_final": {
+  "configuracion": "BiGRU GloVe L200",
+  "accuracy": "0.9028 ± 0.0034",
+  "precision": "0.8950 ± 0.0086",
+  "recall": "0.9134 ± 0.0045",
+  "f1": "0.9040 ± 0.0028",
+  "roc_auc": "0.9640 ± 0.0012",
+  "val_f1": "0.9057 ± 0.0025",
+  "tiempo_min": [
+   35.9,
+   34.5,
+   28.6
+  ]
+ },
+ "postproceso": [
+  {
+   "sistema": "TF-IDF + RL",
+   "n": 1,
+   "val_f1": 0.9136,
+   "accuracy": 0.9183,
+   "precision": 0.9161,
+   "recall": 0.9213,
+   "f1": 0.9187,
+   "roc_auc": 0.9723,
+   "ece": 0.0374,
+   "fp": 252.0,
+   "fn": 235.0,
+   "f1_std": NaN,
+   "umbral": 0.5
+  },
+  {
+   "sistema": "RNN",
+   "n": 3,
+   "val_f1": 0.9057,
+   "accuracy": 0.9028,
+   "precision": 0.895,
+   "recall": 0.9134,
+   "f1": 0.904,
+   "roc_auc": 0.964,
+   "ece": 0.0242,
+   "fp": 320.3333,
+   "fn": 258.6667,
+   "f1_std": 0.0028,
+   "umbral": 0.5
+  },
+  {
+   "sistema": "RNN + umbral",
+   "n": 3,
+   "val_f1": 0.9061,
+   "accuracy": 0.9031,
+   "precision": 0.895,
+   "recall": 0.9142,
+   "f1": 0.9044,
+   "roc_auc": 0.964,
+   "ece": 0.0242,
+   "fp": 321.0,
+   "fn": 256.3333,
+   "f1_std": 0.0029,
+   "umbral": 0.5
+  },
+  {
+   "sistema": "RNN + temperatura",
+   "n": 3,
+   "val_f1": 0.9057,
+   "accuracy": 0.9028,
+   "precision": 0.895,
+   "recall": 0.9134,
+   "f1": 0.904,
+   "roc_auc": 0.964,
+   "ece": 0.0092,
+   "fp": 320.3333,
+   "fn": 258.6667,
+   "f1_std": 0.0028,
+   "umbral": 0.5
+  },
+  {
+   "sistema": "RNN + TF-IDF",
+   "n": 3,
+   "val_f1": 0.9191,
+   "accuracy": 0.9207,
+   "precision": 0.9148,
+   "recall": 0.9283,
+   "f1": 0.9215,
+   "roc_auc": 0.9742,
+   "ece": 0.0294,
+   "fp": 258.3333,
+   "fn": 214.0,
+   "f1_std": 0.0011,
+   "umbral": 0.5
+  },
+  {
+   "sistema": "RNN + TF-IDF + umbral",
+   "n": 3,
+   "val_f1": 0.9199,
+   "accuracy": 0.9207,
+   "precision": 0.9158,
+   "recall": 0.927,
+   "f1": 0.9213,
+   "roc_auc": 0.9742,
+   "ece": 0.0294,
+   "fp": 254.6667,
+   "fn": 218.0,
+   "f1_std": 0.0015,
+   "umbral": 0.505
+  },
+  {
+   "sistema": "Ensamble de semillas",
+   "n": 1,
+   "val_f1": 0.9082,
+   "accuracy": 0.905,
+   "precision": 0.8975,
+   "recall": 0.9149,
+   "f1": 0.9061,
+   "roc_auc": 0.9654,
+   "ece": 0.0205,
+   "fp": 312.0,
+   "fn": 254.0,
+   "f1_std": NaN,
+   "umbral": 0.5
+  },
+  {
+   "sistema": "Ensamble de semillas + umbral",
+   "n": 1,
+   "val_f1": 0.9094,
+   "accuracy": 0.9035,
+   "precision": 0.8895,
+   "recall": 0.922,
+   "f1": 0.9054,
+   "roc_auc": 0.9654,
+   "ece": 0.0205,
+   "fp": 342.0,
+   "fn": 233.0,
+   "f1_std": NaN,
+   "umbral": 0.46
+  },
+  {
+   "sistema": "Ensamble de semillas + TF-IDF",
+   "n": 1,
+   "val_f1": 0.9216,
+   "accuracy": 0.9228,
+   "precision": 0.9182,
+   "recall": 0.9287,
+   "f1": 0.9234,
+   "roc_auc": 0.9743,
+   "ece": 0.0301,
+   "fp": 247.0,
+   "fn": 213.0,
+   "f1_std": NaN,
+   "umbral": 0.5
+  },
+  {
+   "sistema": "Ensamble de semillas + TF-IDF + umbral",
+   "n": 1,
+   "val_f1": 0.9223,
+   "accuracy": 0.9226,
+   "precision": 0.9196,
+   "recall": 0.9267,
+   "f1": 0.9231,
+   "roc_auc": 0.9743,
+   "ece": 0.0301,
+   "fp": 242.0,
+   "fn": 219.0,
+   "f1_std": NaN,
+   "umbral": 0.51
+  }
+ ],
+ "sistema_final": "Ensamble de semillas + TF-IDF + umbral",
+ "sistema_final_f1_ic95": [
+  0.916,
+  0.9299
+ ],
+ "diferencia_vs_linea_base_ic95": [
+  0.0044,
+  -0.0012,
+  0.01
+ ],
+ "accuracy_por_longitud": {
+  "≤100": {
+   "n": 727.0,
+   "acc_rnn_s42": 0.9147,
+   "acc_base": 0.9243,
+   "acc_final": 0.9354
+  },
+  "101-200": {
+   "n": 2766.0,
+   "acc_rnn_s42": 0.9071,
+   "acc_base": 0.9132,
+   "acc_final": 0.9172
+  },
+  "201-400": {
+   "n": 1708.0,
+   "acc_rnn_s42": 0.9046,
+   "acc_base": 0.921,
+   "acc_final": 0.9204
+  },
+  ">400": {
+   "n": 757.0,
+   "acc_rnn_s42": 0.893,
+   "acc_base": 0.9247,
+   "acc_final": 0.9353
+  }
+ },
+ "desacuerdo_rnn_tfidf": 469,
+ "errores": {
+  "rnn_s42": 563,
+  "final": 461,
+  "corregidos": 157,
+  "nuevos": 55,
+  "fp_final": 242,
+  "fn_final": 219
+ }
+}

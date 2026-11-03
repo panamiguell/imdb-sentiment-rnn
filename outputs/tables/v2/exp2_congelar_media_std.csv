@@ -1,0 +1,3 @@
+configuracion,val_f1,test_accuracy,test_precision,test_recall,test_f1,test_roc_auc
+BiGRU GloVe L200,0.9057 ± 0.0025,0.9028 ± 0.0034,0.8950 ± 0.0086,0.9134 ± 0.0045,0.9040 ± 0.0028,0.9640 ± 0.0012
+BiGRU GloVe congelado L200,0.8880 ± 0.0016,0.8888 ± 0.0035,0.8791 ± 0.0252,0.9035 ± 0.0266,0.8907 ± 0.0014,0.9576 ± 0.0008

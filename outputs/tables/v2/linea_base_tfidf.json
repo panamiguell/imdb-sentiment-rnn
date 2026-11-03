@@ -1,0 +1,15 @@
+{
+ "modelo": "TF-IDF (1-2 gramas) + regresi\u00f3n log\u00edstica",
+ "C": 8.0,
+ "val_f1": 0.91361299950257,
+ "test_accuracy": 0.9182611614635784,
+ "test_precision": 0.916083916083916,
+ "test_recall": 0.921299397186872,
+ "test_f1": 0.9186842544665219,
+ "test_f1_macro": 0.9182589485593956,
+ "test_roc_auc": 0.9722950034210794,
+ "test_tn": 2720.0,
+ "test_fp": 252.0,
+ "test_fn": 235.0,
+ "test_tp": 2751.0
+}
