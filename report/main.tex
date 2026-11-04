@@ -67,6 +67,7 @@ El objetivo es clasificar reseñas de IMDb con una RNN y reportar precision, rec
 \label{tab:res}
 \setlength{\tabcolsep}{2.4pt}
 \footnotesize
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{@{}lccccc@{}}
 \toprule
 \textbf{Modelo} & \textbf{Acc.} & \textbf{P} & \textbf{R} & \textbf{F1} & \textbf{AUC} \\
@@ -82,7 +83,7 @@ GloVe, ens. 3 sem. + umbral & 0,903 & 0,889 & 0,922 & 0,9054 & 0,965 \\
 GloVe + TF-IDF + umbral (3s) & 0,921 & 0,916 & 0,927 & 0,9213$\pm$0,0015 & 0,974 \\
 \textbf{Ens. 3 sem. + TF-IDF + umbral} & \textbf{0,923} & \textbf{0,920} & \textbf{0,927} & \textbf{0,9231} & \textbf{0,974} \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{table}
 
 El umbral ajustado (entre 0,47 y 0,53) cambia la F1 en solo $+0{,}0004$. La temperatura ($T=1{,}14$ a $1{,}35$) baja el ECE de 0,024 a 0,009 sin cambiar las predicciones (Fig.~\ref{fig:curvas}c). Ensamblar con TF-IDF ($w=0{,}4$ a $0{,}5$) y umbral ajustado sube la F1 a $0{,}9213\pm0{,}0015$. El sistema final, elegido por F1 de validación, combina el promedio de 3 semillas con TF-IDF: obtiene F1 $=0{,}9231$ (IC 95\,\%: 0,9160 a 0,9299), con 242 falsos positivos y 219 falsos negativos (Fig.~\ref{fig:cual}b). Frente a la línea base la diferencia es $+0{,}0044$, con IC 95\,\% de $-0{,}0012$ a $+0{,}0100$. En las reseñas de más de 400 tokens, la RNN sola acierta 0,893, TF-IDF 0,925 y el sistema final 0,935 (Fig.~\ref{fig:curvas}d).
@@ -124,9 +125,9 @@ El umbral ajustado (entre 0,47 y 0,53) cambia la F1 en solo $+0{,}0004$. La temp
 
 \textbf{Calibración.} $T>1$ en todas las semillas indica que la red es sobreconfiada, algo típico de redes entrenadas con entropía cruzada~\cite{c12}. El umbral óptimo quedó cerca de 0,5 porque los errores ya están equilibrados, a diferencia de la versión previa (375 falsos positivos frente a 175 falsos negativos).
 
-\textbf{Complementariedad.} El ensamble con TF-IDF es la mejora principal (+1,7 puntos sobre la RNN), porque los errores de los dos modelos están poco correlacionados: la RNN modela el orden pero lee solo 200 tokens, mientras TF-IDF ve la reseña completa sin orden~\cite{c6}. Promediarlos reduce la varianza; así se corrigen la reseña larga y la crítica del \textit{remake} de la Tabla~\ref{tab:cual}. La mejora frente a TF-IDF no es significativa, porque su IC incluye el cero.
+\textbf{Complementariedad.} El ensamble con TF-IDF es la mejora principal (+1,7 puntos sobre la RNN), porque los errores de los dos modelos están poco correlacionados: la RNN modela el orden pero lee solo 200 tokens, mientras TF-IDF ve la reseña completa sin orden~\cite{c6}. Así se corrigen la reseña larga y la crítica del \textit{remake} de la Tabla~\ref{tab:cual}. La mejora frente a TF-IDF no es significativa, porque su IC incluye el cero. La RNN sola (F1 de $0{,}904$ con 200 tokens y $0{,}912$ con 400 en la v1) cumple por sí sola el enunciado; el ensamble es una mejora adicional.
 
-\textbf{Limitaciones y mejoras.} Los errores más confiados, compartidos por todos los modelos, son ruido de etiquetado probable (\textit{pure genius} etiquetada como negativa) e ironía; fijan un techo al desempeño. La RNN con 200 tokens (0,904) queda por debajo de la v1 con 400 (0,912). Se proponen: (i) GloVe con 400 tokens más el ensamble; (ii) descongelar el embedding gradualmente, y (iii) leer las reseñas largas por segmentos o con atención.
+\textbf{Limitaciones y mejoras.} Los errores más confiados, compartidos por todos los modelos, son ruido de etiquetado probable (\textit{pure genius} etiquetada como negativa) e ironía; fijan un techo al desempeño. Se proponen: (i) GloVe con 400 tokens más el ensamble; (ii) descongelar el embedding gradualmente, y (iii) leer las reseñas largas por segmentos o con atención.
 
 \begin{thebibliography}{99}
 
